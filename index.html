@@ -303,14 +303,32 @@
     <section id="galeri">
       <h2>Galeri Kegiatan</h2>
       <div class="gallery">
-        <img src="1748676202503.jpg" alt="Kegiatan 1"> 
+        <img src="1748782531352.jpg" alt="tanbahan">
+        <img src="1748782531359.jpg" alt="tanbahan">
+        <img src="1748676202503.jpg" alt="Kegiatan 1">
         <img src="1748676173115.jpg" alt="Kegiatan 2">
+        <img src="1748782531470.jpg" alt="Kegiatan 2">
+        <img src="1748782531464.jpg" alt="Kegiatan 2">
+        <img src="1748782531452.jpg" alt="Kegiatan 2">
+        <img src="1748782531444.jpg" alt="Kegiatan 2">
         <img src="1748676350726.jpg" alt="Kegiatan 3">
+        <img src="1748782531398.jpg" alt="Kegiatan 3">
         <img src="1748676173119.jpg" alt="Kegiatan 4">
         <img src="1748676173110.jpg" alt="Kegiatan 5">
         <img src="1748676173105.jpg" alt="Kegiatan 6">
         <img src="1748676173097.jpg" alt="Kegiatan 7">
+        <img src="1748782531411.jpg" alt="Kegiatan 7">
+        <img src="1748782531417.jpg" alt="Kegiatan 7">
+        <img src="1748782531365.jpg" alt="Kegiatan 10">
+        <img src="1748782531372.jpg" alt="Kegiatan 10">
+        <img src="1748782531383.jpg" alt="Kegiatan 10">
+        <img src="1748782531391.jpg" alt="Kegiatan 10">
         <img src="1748676173101.jpg" alt="Kegiatan 8">
+        <img src="1748782531406.jpg" alt="Kegiatan 3">
+        <img src="1748782531324.jpg" alt="Kegiatan 3">
+        <img src="1748782531334.jpg" alt="Kegiatan 3">
+        <img src="1748782531340.jpg" alt="Kegiatan 3">
+        <img src="1748782531346.jpg" alt="Kegiatan 3">
       </div>
     </section>
     <section id="daftar">
@@ -328,89 +346,9 @@
     <textarea name="alasan" placeholder="Alasan Bergabung" rows="3" required></textarea>
         <p1>contact person</p1><br>
     <p2>•082118889838 mimin bilqis</p2><br>
-    <p2><a href="https://www.instagram.com/pmr039_smansix?igsh=eDJpajZpNTA3YTA2">PMR039_smansix</p2><br>
+    <p2><a href="https://www.instagram.com/pmr039_smansix?igsh=eDJpajZpNTA3YTA2">pmr039_smansix</a></p2>
   <label>
     <h3>Persetujuan Orang Tua / Wali</h3>
     <input type="checkbox" name="izin_wali" required> Saya sebagai orang tua/wali menyetujui bahwa anak saya mengikuti kegiatan ini.
   </label><br><br> 
-    <button type="submit">Daftar</button>
-    <p id="notif" style="display:none;color:green;text-align:center;margin-top:10px;">Pendaftaran berhasil! Cek email kamu 😊</p>
-  </form>
-</section>
-  </main>
-  <footer>&copy; 2025 PMR 039 SMA Negeri 6 Medan </footer>
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navbar = document.getElementById('navbar');
-    const links = navbar.querySelectorAll('a');
-
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navbar.classList.toggle('open');
-    });
-
-    links.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        links.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-        document.querySelectorAll('main section').forEach(sec => sec.classList.remove('active'));
-        document.getElementById('sub-kegiatan').style.display = 'none';
-        document.getElementById('sub-divisi').style.display = 'none';
-        const target = document.getElementById(link.getAttribute('href').substring(1));
-        target.classList.add('active');
-        if (window.innerWidth < 768) {
-          navbar.classList.remove('open');
-          hamburger.classList.remove('open');
-        }
-      });
-    });
-document.getElementById('formPMR').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const form = e.target;
-
-    fetch(form.action, {
-      method: "POST",
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(response => {
-      if (response.ok) {
-        document.getElementById('notif').style.display = 'block';
-        form.reset();
-      } else {
-        alert("Terjadi kesalahan saat mengirim formulir.");
-      }
-    })
-    .catch(error => {
-      alert("Gagal mengirim. Periksa koneksi atau coba lagi.");
-      console.error(error);
-    });
-  });
-    
-    function bukaKegiatan(judul, deskripsi) {
-      document.querySelectorAll('main section').forEach(sec => sec.classList.remove('active'));
-      document.getElementById('sub-kegiatan').style.display = 'block';
-      document.getElementById('sub-kegiatan-judul').innerText = judul;
-      document.getElementById('sub-kegiatan-deskripsi').innerText = deskripsi;
-    }
-
-    function kembaliKeKegiatan() {
-      document.getElementById('sub-kegiatan').style.display = 'none';
-      document.getElementById('kegiatan').classList.add('active');
-    }
-
-    function bukaDivisi(judul, deskripsi) {
-      document.querySelectorAll('main section').forEach(sec => sec.classList.remove('active'));
-      document.getElementById('sub-divisi').style.display = 'block';
-      document.getElementById('sub-divisi-judul').innerText = judul;
-      document.getElementById('sub-divisi-deskripsi').innerText = deskripsi;
-    }
-
-    function kembaliKeDivisi() {
-      document.getElementById('sub-divisi').style.display = 'none';
-      document.getElementById('divisi').classList.add('active');
-    }
-  </script>
-</body>
-</html>
+    <but
